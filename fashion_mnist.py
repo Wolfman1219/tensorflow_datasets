@@ -23,4 +23,4 @@ model.compile(optimizer='adam',
 
 # Train the model
 model.fit(x_train, y_train, epochs=60, validation_data=(x_test, y_test))
-model.save("stream_model/fashion_model.h5")
+model.save("stream_model/Fashion MNIST.h5")
