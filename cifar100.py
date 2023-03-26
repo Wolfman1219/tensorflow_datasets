@@ -28,4 +28,5 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 # Train the model
-model.fit(x_train, y_train, epochs=10, validation_data=(x_test, y_test))
+model.fit(x_train, y_train, epochs=50, validation_data=(x_test, y_test))
+model.save("stream_model/cifa100_model.h5")

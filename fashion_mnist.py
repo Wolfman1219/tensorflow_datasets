@@ -22,4 +22,5 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 # Train the model
-model.fit(x_train, y_train, epochs=5, validation_data=(x_test, y_test))
+model.fit(x_train, y_train, epochs=60, validation_data=(x_test, y_test))
+model.save("stream_model/fashion_model.h5")
